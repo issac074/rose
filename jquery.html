@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+
+<style type="text/css">
+	
+
+	body{
+		background-color: beige;
+	}
+	.ui-header.ui-footer{
+		background-color: skyblue;
+		color: white;
+		text-align: center;
+
+	}
+	.ui-btn.custom-btn{
+         color: white;
+         background-color: green;
+
+	}
+</style>
+
+</head>
+<body>
+	<!-- registe page -->
+<h1>REGISTER page</h1>
+
+<div data-role="page" id="register">
+	<div data-role="header">
+		<h1>REGISTRATIONFORM</h1>
+		
+	</div>
+	<div data-role="content">
+		<form>
+			<input type="text" name="" placeholder="enter name"><br>
+			<input type="email" name="" placeholder="enter email"><br>
+			<input type="text" name="" placeholder="enter address"><br>
+			<input type="password" name="" placeholder="enter password"><br><br>
+
+			<a href="#login" class="custom-btn ui-btn">Submit & go</a>
+
+
+		</form>
+	</div>
+
+
+<div data-role="footer">
+	<h3>Already have an account?<a href="#login">login</a></h3>
+</div>
+</div>
+
+<!-- login page -->
+<div data-role="page" id="login">
+
+    <div data-role="header">
+      <h1>Login</h1>
+    </div>
+
+    <div data-role="content">
+      <form>
+        <label for="loginEmail">Email:</label>
+        <input type="email" name="loginEmail" id="loginEmail" placeholder="Enter your email">
+
+        <label for="loginPassword">Password:</label>
+        <input type="password" name="loginPassword" id="loginPassword" placeholder="Enter your password">
+
+        <a href="#welcome" class="ui-btn custom-btn">Login</a>
+      </form>
+    </div>
+
+    <div data-role="footer">
+      <h4>Don't have an account? <a href="#register">Register</a></h4>
+    </div>
+
+  </div>
+
+  <!-- welcome page -->
+  <div data-role="page" id="welcome">
+  	<div data-role="header">
+  		<h1>WELCOME</h1>
+  	</div>
+  	<div data-role="content">
+  		<p>youve logged in successfully!</p>
+  		<a href="#login" class="custom-btn ui-btn">Logout</a>
+  	</div>
+
+  	<div data-role="footer">
+  		<p>Thank you visit again</p>
+  	</div>
+  	
+  </div>
+
+</body>
+</html>
